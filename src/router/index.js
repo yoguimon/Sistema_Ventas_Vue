@@ -14,7 +14,7 @@ import VentasForm from '@/views/movimientos/Ventas-form.vue'
 import Ventas from '@/views/movimientos/Ventas.vue'
 import Perfil from '@/views/administracion/Perfil.vue'
 const router = createRouter({
-  history: createWebHistory('#'),
+  history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
       path: '/login',

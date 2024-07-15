@@ -20,11 +20,11 @@
             <div class="form-container sign-in">
                 <form action="#">
                     <h1>Iniciar Sessión</h1>      
-                    <samp>usa tu Correo y Contraseña</samp>
-                    <input type="email" class="inputlogin mt-5" placeholder="Email" v-model="email">
+                    <button type="button" class="btn" @click="llenarDatos()">👉 Correo y Contraseña de Prueba </button>
+                    <input type="email" class="inputlogin mt-3" placeholder="Correo" v-model="email">
                     <small v-if="errors.email" style="color:red"><i class="fas fa-times me-1"></i>{{errors.email[0]}}</small>
 
-                    <input type="password" class="inputlogin" placeholder="Password" v-model="password">
+                    <input type="password" class="inputlogin" placeholder="Contraseña" v-model="password">
                     <small v-if="errors.password" style="color:red"><i class="fas fa-times me-1"></i>{{errors.password[0]}}</small><br>
                     <button type="button"  @click="validar()" class="inicio-temporal btnlogin">Ingresar</button>
                 </form>
@@ -126,9 +126,12 @@ import { useRouter } from 'vue-router';
                 });
         }catch(error){
             errors.value = error.response.data.errors;
-            console.log(errors.value);
         }
                 
+    }
+    function llenarDatos(){
+        email.value="yogui@gmail.com";
+        password.value = "yogui1995";
     }
 </script>
 <style>

@@ -2,7 +2,7 @@
     <div class="container mt-4">
         <div class="row">
             <div class="col-12 col-md-3 mt-3">
-                <div class="card text-white cuadrado">
+                <div class="card text-white" style="background-color: #003C43;">
                     <div class="card-body">
                         <div class="row text-center">
                             <div class="col-12 col-md-7">
@@ -16,7 +16,7 @@
                 </div>
             </div>
             <div class="col-12 col-md-3 mt-3">
-                <div class="card text-white cuadrado">
+                <div class="card text-white" style="background-color: #003C43;">
                     <div class="card-body">
                         <div class="row text-center">
                             <div class="col-12 col-md-7" id="totalProductos">
@@ -30,7 +30,7 @@
                 </div>
             </div>
             <div class="col-12 col-md-3 mt-3">
-                <div class="card text-white cuadrado">
+                <div class="card text-white" style="background-color: #003C43;">
                     <div class="card-body">
                         <div class="row text-center">
                             <div class="col-12 col-md-7">
@@ -44,7 +44,7 @@
                 </div>
             </div>
             <div class="col-12 col-md-3 mt-3">
-                <div class="card text-white cuadrado">
+                <div class="card text-white" style="background-color: #003C43;">
                     <div class="card-body">
                         <div class="row text-center">
                             <div class="col-12 col-md-7">
@@ -154,31 +154,5 @@ const listar = async () => {
 }
 </script>
 <style>
-body{
-    background-color: #E3FEF7;
-}
-nav{
-    background-color: #77B0AA;
-}
-.cuadrado{
-    background-color: #003C43;
-}
-.card-productos-tienda{
-    background-color: #77B0AA;
-}
-.list-color{
-    background-color: #E3FEF7;
-}
-.text-badge{
-    background-color: #003C43;
-}
-.card-torta{
-    background-color: #77B0AA;
-}
-#torta{
-    color: #003C43;
-}
-.card-titulo{
-    background-color: #77B0AA;
-}
+
 </style>
