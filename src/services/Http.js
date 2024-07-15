@@ -1,4 +1,4 @@
-import { Buffer } from 'Buffer';
+import { Buffer } from 'buffer';
 import axios from 'axios';
 export const urlBase = "https://api.repuestosangel.net/api/";
 export const urlBaseAsset = "https://api.repuestosangel.net/";
