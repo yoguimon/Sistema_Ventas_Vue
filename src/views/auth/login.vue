@@ -51,7 +51,7 @@
 <script setup>
 import { ref } from 'vue';
 import Swal from 'sweetalert2';
-import { Buffer } from 'Buffer';
+import { Buffer } from 'buffer';
 import { iniciarSesion, registroUsuarioAxios } from '../../services/authService';
 import { useRouter } from 'vue-router';
     const email = ref("");

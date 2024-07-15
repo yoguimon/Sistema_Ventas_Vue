@@ -10,8 +10,15 @@ export default defineConfig({
   ],
   base: 'https://yoguimon.github.io/Sistema_Ventas_Vue/',
   resolve: {
+    plugins: [vue()],
+    resolve: {
+      alias: {
+        'buffer': 'buffer',
+      },
+    },
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
     }
   }
-})
+});
+
